@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 id="firstH2" onclick="sayHello()"> This a html page working with some js stuff</h2>
+
+    <h3 onclick="alert('hello at mouse over')"> click me to get a notification</h3>
+    <!-- this =>  <p onclick="printElement(this)"> click me to say hello to your page </p>
+ -->
+    <p id="hello" onclick="printElement(this)"> click me to say hello to your page </p>
+
+
+ <!-- this =>   <button onclick="printElement(this)"> this is just a button</button>
+ -->
+    <button class="button" onclick="changeOthers(this,'hello')"> this is just a button</button>
+    <button class="button" onclick="changeOthers(this,'firstH2')"> this is the second button</button>
+
+
+    <button onclick="changeButtons('button')"> Change other buttons </button>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
